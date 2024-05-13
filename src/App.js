@@ -1,13 +1,13 @@
 
 import './App.css';
-import logo from '/Users/richardli/Desktop/exhibitm/src/photos/LOGO.png';
-import haircutPhoto from '/Users/richardli/Desktop/exhibitm/src/photos/HAIR CUTTING.PNG';
-import barberPhotoTwo from '/Users/richardli/Desktop/exhibitm/src/photos/HEADSPA.PNG';
-import barberPhotoOne from '/Users/richardli/Desktop/exhibitm/src/photos/BARBER2.PNG';
-import shop from '/Users/richardli/Desktop/exhibitm/src/photos/PRODUCT.jpg';
-import map from '/Users/richardli/Desktop/exhibitm/src/photos/MAP.PNG';
-import info from '/Users/richardli/Desktop/exhibitm/src/photos/info.png';
-import social from '/Users/richardli/Desktop/exhibitm/src/photos/ICONS.PNG';
+import logo from './photos/LOGO.png';
+import haircutPhoto from './photos/HAIR CUTTING.PNG';
+import barberPhotoTwo from './photos/HEADSPA.PNG';
+import barberPhotoOne from './photos/BARBER2.PNG';
+import shop from './photos/PRODUCT.jpg';
+import map from './photos/MAP.PNG';
+import info from './photos/info.png';
+import social from './photos/ICONS.PNG';
 import NavBar from './components/Navbar';
 import Barbers from './components/Barbers';
 import Carousel from './components/Carousel';
