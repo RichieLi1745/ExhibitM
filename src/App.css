@@ -57,6 +57,7 @@
   justify-content: flex-end;
   width: 75%;
   flex-direction: row;
+  align-items: center;
 }
 .logo-navbar {
   display: flex;
@@ -229,4 +230,99 @@
     border-radius: 10px;
     width: 72%;
     text-align: center;
+}
+.shop-image {
+  width: 100%;
+    position: relative;
+    bottom: 4px;
+}
+.shop-image-container {
+  position: relative;
+}
+.shop-text-one {
+  color: white;
+  font-size: 246%;
+}
+.shop-text-two {
+  color:red;
+}
+.shop-text-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 11%;
+  z-index: 7;
+  top: 25%;
+  row-gap: 1rem;
+  background: linear-gradient(to bottom, #ff000063, #443e3e);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.map-container {
+  position: relative;
+  z-index: 99;
+}
+
+.map {
+  width: 50%;
+  height: auto;
+  padding-left: 4%;
+  padding-top: 3%;
+  padding-bottom: 4%;
+}
+
+.maps-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height:99%;
+  background: rgba(0, 0, 0, 0); /* transparent by default */
+  transition: background 0.5s; /* smooth transition */
+  border-radius: 1rem;
+}
+
+.map-container:hover .maps-overlay {
+  background: rgba(187, 177, 177, 0.5); /* grey with 50% opacity on hover */
+  border-radius: 1rem;
+}
+.map-line {
+  height: 5rem;
+  width: 3px;
+  background: white;
+  margin: 0 10px;
+}
+.map-modal {
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 29%;
+  align-items: center;
+  left: 12%;
+
+}
+.map-info-social {
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.info {
+  position: relative;
+    right: 34%;
+    width: 25%;
+}
+.social {
+  position: absolute;
+    width: 28%;
+    left: 66%;
+}
+.Tab {
+  border-right: 2px solid;
+    padding: 3%;
+}
+.Tab:hover {
+  background-color: rgba(255, 0, 0, 0.394);
+  transition: background 0.5s;
 }

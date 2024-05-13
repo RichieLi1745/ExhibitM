@@ -4,9 +4,16 @@ import logo from '/Users/richardli/Desktop/exhibitm/src/photos/LOGO.png';
 import haircutPhoto from '/Users/richardli/Desktop/exhibitm/src/photos/HAIR CUTTING.PNG';
 import barberPhotoTwo from '/Users/richardli/Desktop/exhibitm/src/photos/HEADSPA.PNG';
 import barberPhotoOne from '/Users/richardli/Desktop/exhibitm/src/photos/BARBER2.PNG';
-import carouselPhotoOne from '/Users/richardli/Desktop/exhibitm/src/photos/LND6592.jpg';
-import carouselPhotoTwo from '/Users/richardli/Desktop/exhibitm/src/photos/Guy-Riggio-Stylist.jpg';
-import carouselPhotoThree from '/Users/richardli/Desktop/exhibitm/src/photos/Buddy_Porter__Stylist_-_new_to_salon.jpg';
+import shop from '/Users/richardli/Desktop/exhibitm/src/photos/PRODUCT.jpg';
+import map from '/Users/richardli/Desktop/exhibitm/src/photos/MAP.PNG';
+import info from '/Users/richardli/Desktop/exhibitm/src/photos/info.png';
+import social from '/Users/richardli/Desktop/exhibitm/src/photos/ICONS.PNG';
+import NavBar from './components/Navbar';
+import Barbers from './components/Barbers';
+import Carousel from './components/Carousel';
+import ShopSection from './components/ShopSection';
+import Maps from './components/Maps';
+
 function App() {
   return (
 
@@ -20,14 +27,7 @@ function App() {
             Exhibit:M
           </h4>
         </header>
-        <div className="nav-bar">
-            <p>SALON</p>
-            <p>HEAD SPA</p>
-            <p>STYLISTS</p>
-            <p>UN|CUT</p>
-            <p>SHOP</p>
-            <p>BOOK</p>
-        </div>
+        <NavBar/>
       </div>
 
       <div className="image-container">
@@ -52,35 +52,14 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="barbers">
-        <div className="barber-container">
-          <img className="barber-photo-one" src={barberPhotoOne} alt="barber one" />
-          <div className="barber-overlay"></div>
-          <div className="barber-text">SALON</div>
-        </div>
-        <div className="barber-container">
-          <img className="barber-photo-two" src={barberPhotoTwo} alt="barber two"/>
-          <div className="barber-overlay"></div>
-          <div className="barber-text">HEAD SPA</div>
-        </div>
-
+      <Barbers barberPhotoOne={barberPhotoOne} barberPhotoTwo={barberPhotoTwo}/>
+      <Carousel/>
+      <ShopSection shop={shop}/>
+      <div className="map-info-social">
+        <Maps map={map}/>
+        <img className="info" src={info} alt="Store Info"/>
+        <img className="social" src={social} alt="Social Media"/>
       </div>
-      <div className="carousel">
-        <div className="carousel-photo-container">
-          <img className="carousel-photo" src={carouselPhotoOne} alt="Photo One" />
-          <div className="carousel-text">BARBER NAME, BARBER</div>
-        </div>
-        <div className="carousel-photo-container">
-          <img className="carousel-photo" src={carouselPhotoTwo} alt="Photo Two" />
-          <div className="carousel-text">BARBER NAME, BARBER</div>
-        </div>
-        <div className="carousel-photo-container">
-          <img className="carousel-photo" src={carouselPhotoThree} alt="Photo Three" />
-          <div className="carousel-text">BARBER NAME, BARBER</div>
-        </div>
-      </div>
-
-
     </div>
   );
 }
