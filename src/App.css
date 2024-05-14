@@ -56,11 +56,12 @@
   display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 3%;
+    padding-right: 27%;
     font-size: 108%;
-    column-gap: 14%;
+    column-gap: 11%;
     position: absolute;
-    right: 24%;
+    /* left: 36%; */
+    right: 0;
 }
 
 .logo-navbar {
@@ -70,20 +71,6 @@
 
 .logo {
   width: 8%;
-}
-
-/* For tablets and smaller devices */
-@media (max-width: 768px) {
-  .nav-bar {
-    flex-direction: column;
-    width: 100%;
-    padding-right: 0;
-
-  }
-
-  .logo {
-    width: 50%;
-  }
 }
 
 .logo-navbar {
@@ -354,7 +341,34 @@
   transition: background 0.5s;
 }
 
-/* For mobile devices */
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: row;
+        width: 24%;
+        display: flex;
+        position: absolute;
+        right: 0;
+        padding-right: 47%;
+  }
+  .logo {
+    width: 8%;
+  }
+}
+
+
+@media (max-width: 667px) {
+
+  .nav-bar {
+    flex-direction: row;
+    width: 24%;
+    display: flex;
+    position: absolute;
+    right: 0;
+    padding-right: 51%;
+  }
+
+}
 @media (max-width: 480px) {
   .message-header {
     font-size: 84%;
@@ -363,21 +377,23 @@
     flex-direction: row;
     display: flex;
     font-size: 1%;
-    width: 2px;
+    width: 1%;
     position: absolute;
-    right: 73%;
-    column-gap: 11px;
+    right: 0;
+    column-gap: 14px;
+    padding-right: 77%;
   }
 
   .logo {
     width: 11%;
     position: relative;
-    left: 5%;
+    left: 4%;
   }
   .logo-name {
     font-size: 15px;
     position: absolute;
-    top: 8%;
+    top: 6%;
+    left: 3%;
   }
   .message-ontop {
     position: absolute;
@@ -465,5 +481,10 @@
   .social {
     width: 29%;
     left: 66%;
+  }
+}
+@media (width:1024px) {
+  .nav-bar {
+    padding-right: 33%;
   }
 }
