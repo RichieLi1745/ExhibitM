@@ -6,7 +6,7 @@ import barberPhotoOne from '../photos/BARBER2.PNG';
 import shop from '../photos/PRODUCT.jpg';
 import map from '../photos/MAP.PNG';
 import info from '../photos/info.png';
-import social from '/Users/richardli/Desktop/exhibitm/src/photos/ICONS.PNG';
+import social from '../photos/ICONS.PNG';
 import NavBar from './Navbar';
 import Barbers from './Barbers';
 import Carousel from './Carousel';
