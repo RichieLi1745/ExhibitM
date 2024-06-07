@@ -34,5 +34,5 @@
 .cat-logo {
   width: 10rem;
   opacity: 0.5;
-  position: fixed;
+  position: absolute;
 }
