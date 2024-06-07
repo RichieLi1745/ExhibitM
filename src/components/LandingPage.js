@@ -3,6 +3,7 @@ import './LandingPage.css';
 import logo from '../photos/XMLOGO-1,XMLOGO-2/XMLOGO-2.png';
 import insta from '../photos/INSTA LINK-1,INSTA LINK-2/INSTA LINK-2.png';
 import yelp from '../photos/YELP LINK-1,YELP LINK-2/YELP LINK-2.png';
+import Subscribe from './Subscribe';
 
 
 const LandingPage = () => {
@@ -17,7 +18,7 @@ const LandingPage = () => {
         <p className="LP-message-2"> Subscribe to get the latest updates <br/>
         on our Services and Grand Opening. </p>
       </div>
-      <div className="LP-subscribe">Subscribe</div>
+      <Subscribe />
       <a href="https://www.instagram.com/xhbt.m/">
         <img className="LP-image-1" src={insta} alt="Insta"  />
       </a>
