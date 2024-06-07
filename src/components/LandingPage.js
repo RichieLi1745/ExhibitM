@@ -13,11 +13,14 @@ const LandingPage = () => {
         <img className="cat-logo" src={logo} alt="logo" />
       </div>
       <div className="LP-messages">
-        <p className="LP-message-1"> Join us Q4 '24 for an unforgettable experience.</p>
-        <p className="LP-message-2"> Hair Styling and Head Spa </p>
-        <p className="LP-message-3"> Subscribe to get the latest updates on our Services and Grand Opening. </p>
+        <p className="LP-message-1"> Hair Styling and Head Spa coming Fall/Winter </p>
+        <p className="LP-message-2"> Subscribe to get the latest updates <br/>
+        on our Services and Grand Opening. </p>
       </div>
-      <img className="LP-image-1" src={insta} alt="Insta" />
+      <div className="LP-subscribe">Subscribe</div>
+      <a href="https://www.instagram.com/xhbt.m/">
+        <img className="LP-image-1" src={insta} alt="Insta"  />
+      </a>
       <img className="LP-image-2" src={yelp} alt="Yelp" />
     </div>
   );

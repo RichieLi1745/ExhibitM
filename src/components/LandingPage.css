@@ -30,9 +30,26 @@
 .LP-image-1, .LP-image-2 {
   max-width: 21rem;
 }
+.LP-image-1, .LP-image-2:hover {
+  cursor: pointer;
+  color: rgb(44, 81, 44)
+}
 
 .cat-logo {
   width: 10rem;
   opacity: 0.5;
   position: absolute;
+}
+.LP-subscribe {
+  font-size: 3rem;
+  background-color: #315036;
+  padding: 1rem;
+  border-radius: 15px;
+  border: 2px solid #eae129ba;
+  margin-bottom: 4rem;
+}
+.LP-subscribe:hover {
+  cursor: pointer;
+  background-color: #4e8457;
+  color: black;
 }
